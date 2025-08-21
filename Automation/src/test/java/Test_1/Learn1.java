@@ -17,7 +17,7 @@ public class Learn1 {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-		
+		//this is simple a change.	
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -34,7 +34,6 @@ public class Learn1 {
 		a.scrollToElement(Link).perform();          
 		Link.click();
 		driver.switchTo().alert().accept();
-		
 		Set<String> S = driver.getWindowHandles();
 		Iterator<String> I = S.iterator();
 		String Parent_id= I.next();
